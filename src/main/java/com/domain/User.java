@@ -1,15 +1,24 @@
-package comm.domain;
+package com.domain;
 
 public class User {
-	private int id;
-	private String name;
-	private String password;
+	public String id;
+	public String name;
+	public String password;
 	
-	public int getId() {
+	public User(String id, String name, String password) {
+		this.id = id;
+		this.name = name;
+		this.password = password;
+	}
+	
+	public User() {
+	}
+	
+	public String getId() {
 		return id;
 	}
 	
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	
